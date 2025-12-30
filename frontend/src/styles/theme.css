@@ -1,0 +1,78 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --bg: #f1f5f9;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --danger: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.dashboard-container {
+  padding: 30px;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.attendance-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.attendance-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 22px;
+  background: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.progress.safe {
+  background: #4caf50;
+}
+
+.progress.danger {
+  background: #f44336;
+}
+
+.warning-text {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 8px;
+}
